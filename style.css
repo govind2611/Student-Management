@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quattrocento:wght@700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: black;
+}
+body{
+    color: #ffffff;
+}
+
+.container{
+    margin: 20px 10px;
+  }
+  
+.input-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    gap: 20px;
+  }
+  .input-container input{
+    background-color: black;
+    border: 1px solid #a4a4a4;
+    height: 45px;
+    margin: 10px;
+    padding-left: 10px;
+    color: white;
+    width: 30vw;
+    border-radius: 5px;
+  }
+  .icons{
+    margin-top: -20px;
+    margin-right: 5px;
+    display: flex;
+    font-size:20px;
+    justify-content: flex-end;
+    gap:8px
+  }
+  .button button{
+    border: 1px solid #a4a4a4;
+    color: black;
+    background-color: #ffffff;
+    height: 40px;
+    margin: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 40vw;
+    cursor: pointer;
+  }
+  .search{
+    width:98vw;
+    background-color: black;
+    border: 1px solid lightgray;
+    height: 35px;
+    padding: 0;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding-left: 10px;
+    color: #a4a4a4;
+  }
+  
+  .table{
+    border: 1px solid #858585;
+    width:98vw;
+    min-height: 100px;
+    font-size: 14px;
+    color: #e6e6e6;
+    margin-left: 10px;
+    border-spacing: 0;
+  } 
+  th{
+    border-bottom: 1px solid #858585;
+    border-right: 1px solid #858585;
+    padding: 5px;
+  }
+  
+  td{
+    padding: 10px;
+    border: 1px solid #858585;
+   margin-right: 250px;
+  }
+  
+  tbody{
+    height: auto;
+  }
+
+  
+@media (max-width: 850px) {
+    .input-container {
+      grid-template-columns: auto;
+      grid-row-gap: 5px;
+    }
+    .input-container input {
+      width: 95vw;
+    }
+    .table {
+        width: 96%;
+      font-size: 10px;
+    }
+    .button button{
+        margin-left: 10px;
+        width: 60vw;
+    }
+    .search {
+      width: 96%;
+      margin-left: 10px;
+    }
+  }
+  
+ 
+  
